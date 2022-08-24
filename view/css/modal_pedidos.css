@@ -1,0 +1,76 @@
+.modal_pedido.open {
+    width: 100%;
+    height: 100%;
+}
+
+.modal_pedido {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.modal_pedido .window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    background: #fff;
+    border-radius: 3px;
+    padding: 20px;
+    border: solid 1px var(--primary_background);
+}
+
+.modal_pedido .window #modal_pedidos_window {
+    display: block;
+    width: 100%;
+    height: calc(100% - 40px);
+}
+
+.modal_pedido .window button {
+    background: var(--error);
+    color: white;
+    border-radius: 4px;
+    height: 40px;
+    padding: 0 20px;
+}
+
+.modal_pedido .window #modal_pedidos_window h3 {
+    text-align: center;
+    margin: 20px 0;
+    color: var(--primary_background);
+}
+
+.modal_pedido .window #modal_pedidos_window table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.modal_pedido .window #modal_pedidos_window table thead {
+    background: var(--primary_background);
+    color: #fff;
+}
+
+.modal_pedido .window #modal_pedidos_window table td {
+    border: solid 1px var(--primary_background);
+    padding: 10px;
+}
+
+.modal_pedido .window #modal_pedidos_window table tbody tr:nth-child(2n) {
+    background: rgba(0, 0, 0, 0.06);
+}

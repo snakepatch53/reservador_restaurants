@@ -1,0 +1,74 @@
+@font-face {
+    font-family: DynaPufft;
+    src: url('../font.general/DynaPufft.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+}
+
+.footer-links a {
+    text-decoration: none;
+}
+
+.__slider img {
+    filter: brightness(0.5);
+    height: calc(100vh / 2);
+    object-fit: cover;
+    object-position: center;
+}
+
+.__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 20px;
+    margin: auto;
+    margin-bottom: 50px;
+    color: var(--bs-primary);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: DynaPufft;
+    text-shadow:
+        0 2px 3px white,
+        2px 0 3px white,
+        -2px 0 3px white,
+        0 -2px 3px white;
+}
+
+.card-menu-img {
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(0.9);
+    transition: all 0.2s ease;
+}
+
+.card-menu-text {
+    display: block;
+    width: 100%;
+    max-height: 45px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+
+.modal-body table tbody td small {
+    display: flex;
+    align-items: center;
+    height: 35px;
+}
+
+.user-profile-photo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+}
