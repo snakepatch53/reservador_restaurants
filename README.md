@@ -8,7 +8,7 @@ Write
 <?php
 $proyect = array(
     "name" => "{If it is in a hosting, leave it empty, but if it is in localhost, write the name of the folder inside www}",
-    "url" => "http:localhost/lottery/",
+    "url" => "Your domain",
     "lang" => "es"
 )
 ?>
